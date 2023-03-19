@@ -1,5 +1,54 @@
+.grid{
+    display:grid; /*propiedad que nos habilita el uso de grillas*/
+}
+.grid{
+    /* 1 columna y 3 filas */
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns:100%;
+    grid-template-rows:auto auto auto;
+}
+/* cada etiqueta a que parte representa */
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area:footer;}
+
+
+
+/* FLEX*/
+header, ul, footer{display: flex;}/* se acomodo con fexbox el header y footer */
+.producto{justify-content: space-between;}
+
+
+/* BOX MODEL*/
+li{padding:20px;}
+.mt20{margin-top:20px;}
+.p20{padding:20px;}
+.img-fluid{width:100%;height: 400px;}/* para evitar el overflow */
+
+
+
+
+
+/* GENERAL */
+ul{list-style-type: none;}
+a{text-decoration: none;font-size:22px;}
+h1{text-align: center;}
+body{margin:0;}
+img{
+    border-radius: 20px;
+    width: 100%;
+    }
+
+
+header{
+    position: sticky; top: 0px;
+}
 .genio{ 
-    background-color: yellowgreen;
+    background-color: beige;
     border: 3px solid beige;
 }
 .parrafo-2{
@@ -8,35 +57,8 @@ background-color:rgb(148, 209, 87);
 border: 3px solid beige;
 text-align: center;
 }
-table{
-font-family: Arial, Helvetica, sans-serif;
-border: 2px solid gray;
-border-collapse: collapse;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
-}
-caption{
-font-size: 2rem;
-font-weight: bold;
-margin-bottom: 1rem;
-}
-th,
-td{
-border: 2px solid gray;
-padding: 1rem;
-}
-tr:nth-child(4)  td:nth-child(2){
-    background-color: chartreuse;
-    letter-spacing: 90px;
-    padding-left: 50px;
-    text-transform: uppercase;
-}    
-td:first-child,
-th,
-tfoot{
-background-color: chartreuse;    
-}   
-span{
-    color: blue;
-} 
+
+
+
+
+
