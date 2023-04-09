@@ -86,6 +86,11 @@ background-color:rgb(148, 209, 87);
 border: 3px solid beige;
 text-align: center;
 }
+.elemento{
+    width: 96%;
+    height: 20px;
+    border-radius: 20px 
+ }
 /* DESKTOP */
 
 @media (min-width:1024px){
@@ -121,6 +126,7 @@ a:hover{
     background-color:rgb(148, 209, 87);
     border-radius:20px;
     margin:20px;
+    width: 200px;
 }
 
 }
@@ -140,14 +146,11 @@ a:hover{
       }
       .colorf{
         background-color:rgb(148, 209, 87);
-        font-size:12px;
+        font-size:14px;
         margin:30px; 
         border-radius: 20px;
+        width: 200px;
     }
-    .elemento{
-        width: 96%;
-        height: 20px;
-        border-radius: 20px 
-     }
+    
 
 }
