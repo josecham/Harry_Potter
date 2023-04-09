@@ -34,47 +34,40 @@
     <h2>Deja tu opinión al respecto sobre la pelicula</h2>
     </div>   
     <form action="#" method="post" class="colorf" >
-        <fieldset class="colorform p20"> 
-    <div>        
-        <label for="nombre">NOMBRE</label>
-        <input id="nombre" name="nombre" placeholder="NOMBRE">
-    </div><br>    
-    <div>
-    <label> EMAIL
-        <input type="email" placeholder="CAMPO OBLIGATORIO" required>
-    </label>
-    </div><br>
-    <div>
-    <label> CONTRASEÑA
-        <input type="contraseña" placeholder="CONTRASEÑA">
-    </label>
-    </div><br>
-    <div>
-        <label> ME GUSTO
-            <input type="radio" name="gender" value="Masculino">
-        </label>
-        <label> NO ME GUSTO
-            <input type="radio" name="gender" value="Femenino">
-        </label>
-    </div><br>
-    <div>
-        <label> PUNTAJE DEL 1 AL 5
-            <select name="puntaje del 1 al 5">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </label>
-    </div><br>
-        <textarea name="#" id="message" cols="30" rows="10"placeholder="MENSAJE" class="mensaje"></textarea><br>
-        <label>
+        <fieldset class="colorform"> 
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="NOMBRE" class="elemento"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="APELLIDO" class="elemento"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="EMAIL" class="elemento"><br>
+            <div>
+                <label> ME GUSTO
+                    <input type="radio" name="gender" value="Masculino">
+                </label>
+                <label> NO ME GUSTO
+                    <input type="radio" name="gender" value="Femenino">
+                </label>
+            </div>
+            <div>
+                <label> PUNTAJE DEL 1 AL 5
+                    <select name="puntaje del 1 al 5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+            </div>
+            <label for="message">Mensaje:</label><br>
+            <textarea name="#" id="message" cols="30" rows="10" placeholder="MENSAJE" class="mensaje"></textarea>
+            <label><br>
             <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
              Acepto Terminos y Condiciones
             </label><br>
-        <button type="submit">ENVIAR</button>
-        </fieldset>
+            <input type="submit" value="ENVIAR">
+            </fieldset>
     </form>
 
 </main>
