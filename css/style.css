@@ -164,6 +164,9 @@ footer {
     display: block;
     flex-direction: column;
   }
+  li {
+    padding: 2px;
+  }
   p {
     font-size: 22px;
     text-align: center;
