@@ -151,18 +151,17 @@ footer {
     align-items: center;
   }
   ul {
-    display: flex;
+    display: block;
     padding: 0;
-    flex-direction: column;
   }
   a {
     color: black;
-    font-size: 22px;
-    padding: 5px;
-    margin: 5px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
   }
   nav {
-    display: flex;
+    display: block;
     flex-direction: column;
   }
   p {
@@ -244,7 +243,7 @@ ul, footer {
 }
 
 .boton-error {
-  background-color: rgb(94, 89, 89);
+  background-color: darkslategray;
 }
 
 .boton-primario {
