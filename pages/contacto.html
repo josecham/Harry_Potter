@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+     <!-- LINK AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div class="grid">   
-<header  class="parrafo-2" >
-    <div>
+<header  class="parrafo-2">
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="3000">
         <img src="../img/logo.jpg" alt="logo" class="logo">
     </div>
 <nav>
-    <ul>
+    <ul data-aos="zoom-in" data-aos-duration="2000" >
         <li><a href="../index.html" class="boton-error">INICIO</a></li>
         <li><a href="#" class="boton-primario">CONTACTO</a></li>
         <li><a href="https://google.com" target="_blank" class="boton-error">Ir a google</a></li>
@@ -24,14 +28,20 @@
 </nav>          
  </header> 
  <main class="genio gridMainProyectos">
-    <div>
+    <div data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="2000">
         <h1>Harry Potter y la Piedra Filosofal (Trailer español)</h1>
     </div>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/WE4AJuIvG1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div>
-    <h2>Deja tu opinión al respecto sobre la pelicula</h2>
+    <h2 data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine"
+    data-aos-duration="2000">Deja tu opinión al respecto sobre la pelicula</h2>
     </div>   
     <form action="#" method="post">
         <fieldset class="colorform colorf"> 
@@ -89,5 +99,10 @@
     </div>
  </footer> 
 </div>
+<!-- SCRIPT AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

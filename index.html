@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <!-- LINK AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>HarryPotter</title>
@@ -17,11 +19,13 @@
     <div class="grid">
  <!-- Etiquetas son <header><section><footer> -->   
  <header  class="parrafo-2 align-items-center">
-    <div>
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="3000">
         <img src="img/logo.jpg" alt="logo" class="logo">
     </div>
     <nav>
-        <ul>
+        <ul data-aos="zoom-in" data-aos-duration="2000">
             <li><a href="#"class="boton-primario" >INICIO</a></li>
             <li><a href="pages/contacto.html" class="boton-error">CONTACTO</a></li>
             <li><a href="https://google.com" target="_blank" class="boton-error">Ir a google</a></li>
@@ -31,10 +35,12 @@
  </header> 
 <main>
 <section class="genio" >
-    <div class="imgPrincipal">
+    <div class="imgPrincipal"data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="3000" >
         <img src="img/imagen.jpeg" alt="imagen" >
     </div>
-    <div class="p20">
+    <div class="p20" data-aos="fade-up" data-aos-duration="3000" >
     <h1>Harry Potter y la Piedra Filosofal</h1>
     <h2>Sinopsis</h2>
     <p>Harry Potter es un niño huérfano que vive con sus únicos parientes vivos, la familia Dursley, en un barrio residencial inglés. En su cumpleaños número 11, Harry es visitado por un misterioso individuo llamado Rubeus Hagrid, quien le revela que realmente él es un mago bastante popular en el mundo mágico por haber sobrevivido al ataque mortal de lord Voldemort cuando solamente tenía un año de edad. Quien al principio sus tíos les dijeron que sus padres fallecieron en un “accidente” pero nunca fue cierto. Tras haber asesinado a sus padres (James y Lily Potter), <b> Voldemort intentó matar a Harry pero no lo consiguió</b>, dejándole solamente una cicatriz en forma de rayo sobre su frente. Sabiendo esto, Hagrid acompaña a Harry para comprar lo necesario con tal de comenzar su formación en el Colegio Hogwarts de Magia y Hechicería.Sin el consentimiento de sus tíos, Harry Potter asiste a Hogwarts para empezar a aprender conjuros y conocer a nuevos amigos; en el proceso, también inicia sus rivalidades con otros estudiantes y parte del personal del colegio. Durante su estancia, Harry Potter descubre que la institución alberga un misterioso objeto en sus dominios, el cual es conocido como la piedra filosofal. Este poderoso elemento es buscado discretamente por Voldemort, a quien la comunidad mágica daba por muerto tras haberle rebotado el ataque mortal dirigido contra Harry Potter. Contrario a dichas creencias, su espíritu desea afanosamente encontrar la piedra para recuperar sus antiguas habilidades de brujo. Además, la piedra filosofal es conocida por otorgar igualmente la inmortalidad a su poseedor.
@@ -62,5 +68,10 @@
     </div>
  </footer> 
 </div>
+<!-- SCRIPT AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
