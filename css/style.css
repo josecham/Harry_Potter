@@ -84,7 +84,6 @@ body {
 
 img {
   border-radius: 20px;
-  width: 100%;
 }
 
 header {
@@ -182,6 +181,13 @@ footer {
     border-radius: 20px;
     width: 200px;
   }
+  img {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .icono {
+    width: auto;
+  }
 }
 /* DESKTOP */
 @media (min-width: 1024px) {
@@ -255,6 +261,13 @@ ul, footer {
   background-color: blue;
   padding: 10px;
   border-radius: 20px;
+}
+
+.scale {
+  transition: all 1s;
+}
+.scale:hover {
+  transform: scale(1.5, 1.5);
 }
 
 /*# sourceMappingURL=style.css.map */
