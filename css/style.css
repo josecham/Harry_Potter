@@ -32,6 +32,7 @@ input:focus {
 /* FLEX*/
 header, ul, footer {
   display: flex;
+  z-index: 9999;
 } /* se acomodo con fexbox el header y footer */
 .producto {
   justify-content: space-between;
